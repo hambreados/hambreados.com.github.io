@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hambreados.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Hambreados.com" />
+<link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="pedidos.html">Pedidos</a>
+    </div>
+    <section>
+        <h1>Ordenar</h1>
+        <h3>¿Listo para ordenartus productos?</h3>
+        <h4>Tu Carrito:</h4>
+<section class="inner-section">
+<div>
+    <h2>Total: $<span id="cart-total">0.00</span></h2>
+    <h3>Cantidad: <span id="cart-count">0</span> productos</h3>
+</div>
+</section>
+<!-- Botón de "Comprar" que vacía el carrito -->
+<button onclick="clearCart()">Comprar</button>
+    </section>
+</body>
+<script>
+    document.getElementById('cart-preview').innerHTML = getCartPreview();
+</script>
+</html>

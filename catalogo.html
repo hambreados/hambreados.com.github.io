@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hambreados.com</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Hambreados.com" />
+<link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="pedidos.html">Pedidos</a>
+    </div>
+
+    <!-- Sección de catálogo -->
+    <section>
+        <header>
+            <h1>CATÁLOGO</h1>
+            <h4>¡Consigue de los mejores productos!</h4>
+            <div id="cart">
+                🛒 Carrito: <span id="cart-count">0</span> items | Total: $<span id="cart-total">0.00</span>
+            </div>
+        </header>
+        <main class="product-list">
+            <!-- Producto 1 -->
+            <div class="product">
+                <h2>Bolsa de chicharrones "clásica"</h2>
+                <p>Ideal bolsa de chicharrones de la mejor calidad, ¡perfectos para un snack rápido!</p>
+                <p class="price">$25 MX</p>
+                <img class="center-image" src="images/hambreados.imagen2.webp" alt="Imagen de chicharrones" width="300px">
+                <button data-price="25" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 (Ejemplo adicional) -->
+            <div class="product">
+                <h2>Picalimon "clasico"</h2>
+                <p>¡El Picalimon clasico que todos amamos, disfrutalo solo o acompañado!</p>
+                <p class="price">$1 MX</p>
+                <img class="center-image" src="images/hambreados.imagen3.webp" alt="Imagen de Picalimon" width="300px">
+                <button data-price="1" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 (Ejemplo adicional) -->
+            <div class="product">
+                <h2>Paleta de Picalimon</h2>
+                <p>¡Un giro interesante para el Picalimon que todos conocemos! Para llevarla a todos lados.</p>
+                <p class="price">$15 MX</p>
+                <img class="center-image" src="images/hambreados.imagen4.webp" alt="Imagen de paleta de Picalimon width="300px">
+                <button data-price="15" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <div class="product">
+                <h2>Dragonzitos</h2>
+                <p>¡Un pequeño sobre con una mezcla divertida y con gran sabor tematizadas con dragones!</p>
+                <p class="price">$5 MX</p>
+                <img class="center-image" src="images/hambreados.imagen5.webp" alt="Imagen de Dragonzitos width="300px">
+                <button data-price="5" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <div class="product">
+                <h2>Botella de agua</h2>
+                <p>Una botella de agua normal y corriente, perfecta para calmar la sed.</p>
+                <p class="price">$10 MX</p>
+                <img class="center-image" src="images/hambreados.imagen6.webp" alt="Imagen de Botella de agua width="300px">
+                <button data-price="10" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <div class="product">
+                <h2>Chicle Bubbaloo</h2>
+                <p>¡Uno de los mejor chicles que vas a probar en tu vida! (Sabores pueden variar)</p>
+                <p class="price">$2 MX</p>
+                <img class="center-image" src="images/hambreados.images7.jpg" alt="Imagen de Chicle width="300px">
+                <button data-price="2" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <div class="product">
+                <h2>Paleta Bubbaloo</h2>
+                <p>¡Todo el sabor de Bubbaloo hecho una paleta increible! (Sabores pueden variar)</p>
+                <p class="price">$10 MX</p>
+                <img class="center-image" src="images/hambreados.images8.jpg" alt="Imagen de Paleta Bubbaloo width="300px">
+                <button data-price="10" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <div class="product">
+                <h2>Selz Soda</h2>
+                <p>¡Dulce rellenos de polvo efervecente sabor limon, ideales para compartir!</p>
+                <p class="price">$2 MX</p>
+                <img class="center-image" src="images/hambreados.imagen9.jpeg" alt="Imagen de Selz Soda" width="300px">
+                <button data-price="2" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+
+            <div class="product">
+                <h2>Pica Fresa</h2>
+                <p>Un caramelo tematizado y sabor fresa, ¡Muy bueno para los amantes de las fresas!</p>
+                <p class="price">$1 MX</p>
+                <img class="center-image" src="images/hambreados.imagen10.jpeg" alt="Imagen de Pica Fresa" width="300px">
+                <button data-price="1" onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Hambreados.com Todos los derechos reservados. (Los productos utilizados y/o nombrados no son de mi pertenencia)</p>
+        </footer>
+    </section>
+
+    <!-- Agregar el script del carrito si existe -->
+    <script src="script.js"></script>
+</body>
+</html>

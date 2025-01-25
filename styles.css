@@ -1,0 +1,160 @@
+.navbar {
+    background-color: #383838;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 20px 80px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+
+body {
+    background-color: rgb(166, 161, 152);
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+section {
+    padding: 50px;
+    background-color: white;
+    margin: 80px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+#cart {
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    flex: 1 1 calc(50% - 40px);
+    max-width: 300px;
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer ajustado */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #383838;
+    color: white;
+    margin-top: auto;
+}
+
+#cart-preview {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 50%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.inner-section {
+    background-color: lightgray;
+    padding: 20px;
+}
